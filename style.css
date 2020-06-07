@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  min-height: 15vh;
+  background-color: #0477bf;
+  width: 100%;
+}
+
+header,
+.global-info-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.logo {
+  color: white;
+}
+
+.header-button-holder {
+  margin-right: 6%;
+}
+
+.header-buttons {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid transparent;
+  outline: none;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.header-buttons:hover {
+  border: 1px solid white;
+  background-color: #0477bf;
+  color: white;
+}
+
+.search-holder {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 80%;
+}
+
+.search-text-holder {
+  text-align: center;
+  margin: 5% 0%;
+  font-size: 1.5rem;
+}
+
+.search-text-holder > * {
+  padding-top: 5%;
+}
+
+.search-text-holder:first-child {
+  font-weight: 300;
+}
+
+.search-form {
+  width: 80%;
+}
+
+#search-country-form {
+  display: flex;
+  justify-content: center;
+}
+
+#search-country-form > input {
+  padding: 10px;
+}
+
+#search-country-form > input:focus {
+  outline-color: #0477bf;
+}
+
+#country-input {
+  width: 50%;
+}
+
+.global-info-holder {
+  min-height: 20vh;
+  color: #0477bfdc;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.global-info-holder > div {
+  text-align: center;
+}
+
+.global-info-holder > div > h1 {
+  font-size: 3rem;
+}
+
+#search-country-form input[type="submit"] {
+  background-color: #0477bf;
+  color: white;
+  border: none;
+  width: 10%;
+  cursor: pointer;
+}
+
+#search-country-form input[type="submit"]:hover {
+  background-color: #0477bfdc;
+  color: white;
+}
+
+#country-info-holder {
+  min-height: 30vh;
+  width: 80%;
+  margin: auto;
+  display: none;
+  text-align: center;
+}
+
+.display-info-holder-data > * {
+  padding-top: 1%;
+}
+
+#country-date-info {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 820px) {
+  .global-info-holder {
+    flex-direction: column;
+    margin-bottom: 15%;
+  }
+
+  .global-info-holder > div {
+    padding: 5% 0%;
+  }
+
+  #search-country-form {
+    flex-direction: column;
+  }
+
+  #search-country-form input[type="submit"] {
+    width: 100%;
+  }
+
+  #country-input {
+    width: 100%;
+    border: 1px solid grey;
+  }
+
+  .search-holder {
+    height: 70vh;
+  }
+
+  .search-text-holder {
+    margin-bottom: 10%;
+    font-size: 1.2rem;
+    align-content: center;
+  }
+
+  .header-button-holder {
+    margin-right: 8%;
+  }
+}

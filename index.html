@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Corona Virus, Statistics</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><h1></h1></a>
+      </div>
+      <div class="header-button-holder">
+        <button class="header-buttons">Register</button>
+        <button class="header-buttons">Login</button>
+      </div>
+    </header>
+    <div class="search-holder">
+      <div class="search-text-holder">
+        <h1>Corona Virus Statistics</h1>
+        <p>Get up-to-date information</p>
+      </div>
+
+      <div class="search-form">
+        <form id="search-country-form">
+          <input
+            id="country-input"
+            type="text"
+            placeholder="Enter country"
+            required
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+    </div>
+    <div id="country-info-holder">
+      <div class="display-info-holder-data">
+        <h1 id="country-name"></h1>
+        <h4 id="country-confirmed">Confirmed: 2250</h4>
+        <h4 id="country-recovered">Recovered: 342</h4>
+        <h4 id="country-deaths">Deaths: 80</h4>
+        <p id="country-date-info"></p>
+      </div>
+    </div>
+
+    <div class="global-info-holder">
+      <div>
+        <h1 id="total-cases"></h1>
+        <p>Total cases</p>
+      </div>
+      <div>
+        <h1 id="total-deaths"></h1>
+        <p>Total deaths</p>
+      </div>
+      <div>
+        <h1 id="total-recovered"></h1>
+        <p>Total recovered</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
